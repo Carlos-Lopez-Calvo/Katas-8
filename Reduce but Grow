@@ -1,0 +1,13 @@
+public class Kata{
+
+  public static int grow(int[] x){
+    int contador = 0;
+    int acumulador = 1;
+    while (contador < x.length){
+      
+      acumulador = acumulador * x[contador];
+      contador++;
+    }
+    return acumulador;
+  
+  }
