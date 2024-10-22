@@ -1,0 +1,15 @@
+function snail(column, day, night) {
+    let currentHeight = 0;
+    let days = 0;
+
+    while (currentHeight < column) {
+        days++;
+        currentHeight += day; 
+        if (currentHeight >= column) {
+            return days; 
+        }
+        currentHeight -= night; 
+    }
+    
+    return days;
+}
